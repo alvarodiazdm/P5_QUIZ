@@ -8,8 +8,9 @@
 <ul>
     <% for (let i in quizzes) { %>
     <% const quiz = quizzes[i]; %>
+
     <li>
-        <%= quiz.question %> : <%=quiz.answer%>
+        Pregunta numero <%=i%>: <%= quiz.question %> : <%=quiz.answer%>
     </li>
     <% }  %>
 </ul>
