@@ -4,9 +4,16 @@
     <title>QUIZZES</title>
 </head>
 <body>
-    <h1>Responde a la siguientes preguntas:</h1>
-    <p><%= quiz %></p>
-
+<h1><b>Lista de Quizzes:</b></h1>
+<ul>
+    <% for (let i in quizzes) { %>
+    <% const quiz = quizzes[i]; %>
+    <li>
+        <%= quiz.question %> : <%=quiz.answer%>
+    </li>
+    <% }  %>
+</ul>
 <a href="/"><b>Inicio.</b></a>
+<a href="/credits"><b>Credits.</b></a>
 </body>
 </html>
